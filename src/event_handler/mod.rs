@@ -50,9 +50,7 @@ impl EventHandler for Handler {
         match storage.get_temporary_voice_channel(&deleted_channel.id).await {
             None => {
                 match storage.get_creator_voice_config(&deleted_channel.id).await {
-                    None => {
-                        println!("Deleted channel is not [ temporary channel, creator channel ]");
-                    }
+                    None => {}
                     Some(_) => {
                         storage.delete_creator_voice_config(&deleted_channel.id).await;
                     }

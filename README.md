@@ -1,5 +1,3 @@
-# WARNING THIS BOT IS IN ALPHA AND WILL HAVE BREAKING CHANGES
-
 # Setup
 Download the source code and run `cargo build --release` (this step take a while so do the next in the mean time)
 
