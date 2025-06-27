@@ -4,3 +4,4 @@
 database.db
 my_test_database.db
 Cargo.lock
+.env

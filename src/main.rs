@@ -22,7 +22,7 @@ async fn main() {
     println!("Starting up");
 
     let database_path = {
-        let mut database_path = env::var("DATABASE_PATH").expect("Expected token: `DATABASE_PATH` in the environment");
+        let mut database_path = env::var("DATABASE_PATH").unwrap_or("".to_string());
 
         if database_path.is_empty() || database_path.ends_with("/") {
             database_path.push_str("database.db");
