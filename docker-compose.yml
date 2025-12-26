@@ -1,9 +1,0 @@
-services:
-  temp-voice-bot:
-    build: .
-    container_name: temp_voice_rust_bot_container
-    environment:
-      - DISCORD_TOKEN=${DISCORD_TOKEN}
-      - DATABASE_PATH=${DATABASE_PATH}
-      - APP_MODE=production
-
